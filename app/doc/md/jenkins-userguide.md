@@ -188,10 +188,10 @@ Dashboard
   - General
     - 설명: `빌드 테스트1`
     - `GitHub project` 체크
-      - Project url: `https://github.com/eomjinyoung/bitcamp-myapp.git`
+      - Project url: `https://github.com/NCP08/ncp-myapp.git`
   - 소스 코드 관리
     - `Git` 선택
-      - Repository URL: `https://github.com/eomjinyoung/bitcamp-myapp.git`
+      - Repository URL: `https://github.com/NCP08/ncp-myapp.git`
       - Credentials:
         - Add 버튼 클릭: `Add Jenkins` 선택
         - `Username with Password` 선택
