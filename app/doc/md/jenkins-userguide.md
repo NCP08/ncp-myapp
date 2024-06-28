@@ -155,6 +155,7 @@ root 사용자로 젠킨스 컨테이너에 접속하기
 호스트# docker exec -itu 0 my-jenkins bash
 컨테이너/# apt-get update
 컨테이너/# apt-get install openjdk-17-jdk -y
+이렇게 설치한 경우는 JAVA_HOME: /usr/lib/jvm/java-17-openjdk-amd64
 ```
 
 (docker inspect my-jenkins 에서 확인 가능)
@@ -166,8 +167,14 @@ root 사용자로 젠킨스 컨테이너에 접속하기
     - JDK
       - 'Add JDK' 클릭
         - Name: `openjdk-17`
-        - JAVA_HOME: `/usr/lib/jvm/java-17-openjdk-amd64`
+        - JAVA_HOME: `/opt/java/openjdk`
     - SAVE 클릭
+
+```
+이미 JDK17이 설치된 jenkins/jenkins:lts-jdk17를 사용했으므로
+JAVA_HOME 경로는 /opt/java/openjdk 이다.
+(docker inspect my-jenkins 에서 확인 가능)
+```
 
 ### github.com의 프로젝트 연동
 
