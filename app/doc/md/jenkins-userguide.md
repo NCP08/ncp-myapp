@@ -308,6 +308,11 @@ docker.sock 권한 변경
 컨테이너/# chmod 666 /var/run/docker.sock
 ```
 
+```
+컨테이너/# apt-get install systemctl
+컨테이너/# systemctl start docker
+```
+
 docker 로그인하기
 
 ```
